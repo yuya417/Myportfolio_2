@@ -39,6 +39,7 @@
           margin-bottom: 5px;
         }
         .career-flex-box {
+          height: 500px;
           table {
             box-sizing: border-box;
             object-fit: scale-down;
@@ -58,7 +59,8 @@
             margin-top: 30px;
             object-fit: scale-down;
             width: 100%;
-            height: 600px;
+            height: 550px;
+            margin-bottom: 50px;
           }
         }
 
@@ -228,12 +230,25 @@
      }
      .career {
       .career-flex-box  {
+        #modal {
+          margin: 5px auto;
+          margin-left: 50px;
+          margin-right: 50px;
+        }
         table {
+          text-align: center;
+          margin: 0;
           padding: 0;
+          margin-right: 6%;
+          margin-left: 6%;
           border: 3px solid #333333;
-          th {
-            font-size: 10px;
-          }
+          width: 1150px;
+        }
+        img {
+          object-fit: cover;
+          width: 700px;
+          height: 900px;
+          padding-bottom: 50px;
         }
       }
      }

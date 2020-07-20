@@ -127,6 +127,31 @@ body main .career h1 {
   font-size: 50px;
 }
 
+body main .career #open, body main .career #close {
+  font-size: 24px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 10px auto 5px;
+  width: 200px;
+  cursor: pointer;
+}
+
+body main .career #mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+body main .career #mask.hidden {
+  display: none;
+}
+
 body main .career .career-flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,29 +159,50 @@ body main .career .career-flex-box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 850px;
 }
 
-body main .career .career-flex-box table {
+body main .career .career-flex-box #modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  z-index: 2;
+}
+
+body main .career .career-flex-box #modal table {
   border: 3px solid #333333;
   padding: 30px;
   border-radius: 10px;
 }
 
-body main .career .career-flex-box table tr th {
+body main .career .career-flex-box #modal table tr th {
   font-size: 20px;
   padding-bottom: 5px;
 }
 
-body main .career .career-flex-box table tr td {
+body main .career .career-flex-box #modal table tr td {
   border: 1px solid #333333;
   padding: 20px;
+}
+
+body main .career .career-flex-box #modal.hidden {
+  -webkit-transform: translate(0, -4000px);
+          transform: translate(0, -4000px);
 }
 
 body main .career .career-flex-box img {
   -o-object-fit: scale-down;
      object-fit: scale-down;
   width: 650px;
-  height: 650px;
+  height: 600px;
 }
 
 body main .production-record {
@@ -192,6 +238,54 @@ body main .production-record .production-record-flex-box .production-record-flex
      object-fit: scale-down;
   width: 300px;
   height: 180px;
+}
+
+body main .production-record .production-record-flex-box #open-2 {
+  cursor: pointer;
+}
+
+body main .production-record .production-record-flex-box #modal-2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  z-index: 2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: default;
+}
+
+body main .production-record .production-record-flex-box #modal-2 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 200px;
+  height: 500px;
+}
+
+body main .production-record .production-record-flex-box #modal-2 #close-2 {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+
+body main .production-record .production-record-flex-box #mask-2 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 body main .sns {

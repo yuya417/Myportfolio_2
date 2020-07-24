@@ -218,74 +218,63 @@ body main .production-record .production-record-h1 h1 {
   font-size: 50px;
 }
 
-body main .production-record .production-record-flex-box {
+body main .production-record .slide-show {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
 }
 
-body main .production-record .production-record-flex-box .production-record-flex-box-1 h1 {
-  font-size: 15px;
-  color: #696666;
-}
-
-body main .production-record .production-record-flex-box .production-record-flex-box-1 img {
+body main .production-record .slide-show img {
   -o-object-fit: scale-down;
      object-fit: scale-down;
   width: 300px;
-  height: 180px;
+  height: 200px;
+  display: none;
 }
 
-body main .production-record .production-record-flex-box #open-2 {
-  cursor: pointer;
+body main .production-record .slide-show .active {
+  display: block;
 }
 
-body main .production-record .production-record-flex-box #modal-2 {
-  background: #fff;
-  padding: 20px;
+body main .production-record nav {
+  margin-top: 30px;
+}
+
+body main .production-record nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .production-record nav ul li {
+  border: 1px solid #ddd;
   border-radius: 4px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  z-index: 2;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: default;
-}
-
-body main .production-record .production-record-flex-box #modal-2 img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 200px;
-  height: 500px;
-}
-
-body main .production-record .production-record-flex-box #modal-2 #close-2 {
   cursor: pointer;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 15px;
-  right: 5px;
+  margin-right: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-body main .production-record .production-record-flex-box #mask-2 {
-  background: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+body main .production-record nav ul li:hover {
+  background-color: #f8f8f8;
+}
+
+body main .production-record nav ul #prev, body main .production-record nav ul #next {
+  width: 50px;
+  line-height: 40px;
 }
 
 body main .sns {
@@ -350,24 +339,71 @@ body main .contact .contact-h1 h1 {
   font-size: 50px;
 }
 
-body main .contact form input {
-  width: 500px;
+body main .contact #modal_2 {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 5%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  z-index: 2;
+  transition: transform 1s;
+}
+
+body main .contact #modal_2 form input {
+  width: 80%;
   height: 50px;
   margin-top: 20px;
   border-radius: 10px;
   border: 1px solid #333333;
 }
 
-body main .contact form textarea {
-  width: 500px;
+body main .contact #modal_2 form textarea {
+  width: 80%;
   margin-top: 20px;
   border-radius: 10px;
   border: 1px solid #333333;
 }
 
-body main .contact form .form-submit input {
+body main .contact #modal_2 form .form-submit input {
   width: 100px;
   border-radius: 10px;
+}
+
+body main .contact #modal_2.hidden_2 {
+  -webkit-transform: translate(0, -10000px);
+          transform: translate(0, -10000px);
+}
+
+body main .contact #open_2, body main .contact #close_2 {
+  font-size: 25px;
+  border: 1px solid #333333;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 12px 0;
+  margin: 60px auto;
+  cursor: pointer;
+}
+
+body main .contact #mask_2 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+body main .contact #mask_2.hidden_2 {
+  display: none;
 }
 
 body footer {

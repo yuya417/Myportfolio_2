@@ -130,36 +130,25 @@
         </div>
         <div id="open">詳しく見る</div>
     </div>
-    <div class="production-record" id="production-record-link">
+    <div class="production-record" id="production-record-link ">
       <div class="production-record-h1">
         <h1>Production-record</h1>
       </div>
-      <div class="production-record-flex-box">
-        <div class="production-record-flex-box-1" id="open-2">
-          <div id="mask-2" class="hidden-2"></div>
-          <section id="modal-2" class="hidden-2">
-            <img src="img/screencapture-file-Users-yuya-Library-Mobile-Documents-com-apple-CloudDocs-sample-index-html-2020-07-01-12_38_27.png" alt="">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="close-2">
-              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
-              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
-            </svg>
-          </section>
-          <h1>LINE STORE（模写）</h1>
-          <img src="img/FireShot Capture 019 - コミュニケーションアプリLINE(ライン） - .png" alt="">
-        </div>
-        <div class="production-record-flex-box-1">
-          <h1> LINE MOBILE（模写）</h1>
-          <img src="img/FireShot Capture 022 - [LINEモバイル] 格安スマホ_格安SIM 最大2ヶ月間0円_月キャンペーン実施中！ - .png" alt="">
-        </div>
-        <div class="production-record-flex-box-1">
-          <h1>FLOWER（模写）</h1>
-          <img src="img/FireShot Capture 029 - FLOWER- かわいいが届くお花便 - .png" alt="">
-        </div>
-        <div class="production-record-flex-box-1">
-          <h1>iSara（模写）</h1>
-          <img src="img/FireShot Capture 032 - iSara（模写） - .png" alt="">
-        </div>
-      </div>
+      <h3>（模写コーディング）</h3>
+      <ul class="slide-show">
+        <li class="slide active"><img src="img/FireShot Capture 019 - コミュニケーションアプリLINE(ライン） - .png" alt=""></li>
+        <li class="slide"><img src="img/FireShot Capture 022 - [LINEモバイル] 格安スマホ_格安SIM 最大2ヶ月間0円_月キャンペーン実施中！ - .png" alt=""></li>
+        <li class="slide"><img src="img/FireShot Capture 029 - FLOWER- かわいいが届くお花便 - .png" alt=""></li>
+        <li class="slide"><img src="img/FireShot Capture 032 - iSara（模写） - .png" alt=""></li>
+      </ul>
+      <nav>
+        <ul>
+          <li id="prev" class="chang-slide prev">&lt;</li>
+          <li id="next" class="chang-slide next">&gt;</li>
+        </ul>
+      </nav>
+
+
         
     </div>
     <div class="sns" id="sns-link">
@@ -183,20 +172,25 @@
       <div class="contact-h1">
         <h1>Contact</h1>
       </div>
-      <form action="">
-        <div class="form-name">
-          <input type="text" name="yourname"  class="form-name-1" placeholder="お名前/会社名">
-        </div>
-        <div class="form-email">
-          <input type="text" name="email" placeholder="メールアドレス">
-        </div>
-        <div class="form-message">
-          <textarea name="" id="" cols="30" rows="10" placeholder="メッセージ本文"></textarea>
-        </div>
-        <div class="form-submit">
-          <input type="submit" value="送信">
-        </div>
-      </form>
+      <div id="open_2">お問い合わせはこちら</div>
+      <div id="mask_2" class="hidden_2"></div>
+      <section id="modal_2" class="hidden_2">
+            <form action="">
+              <div class="form-name">
+                <input type="text" name="yourname"  class="form-name-1" placeholder="お名前/会社名">
+              </div>
+              <div class="form-email">
+                <input type="text" name="email" placeholder="メールアドレス">
+              </div>
+              <div class="form-message">
+                <textarea name="" id="" cols="30" rows="10" placeholder="メッセージ本文"></textarea>
+              </div>
+              <div class="form-submit">
+                <input type="submit" value="送信">
+              </div>
+            </form>
+            <div id="close_2">閉じる</div>
+      </section>
     </div>
   </main>
   <footer>
@@ -231,6 +225,12 @@
       </div>
     </div>
   </footer>
+
+
+<!-- JavaScript -->
 <script src="js/main.js"></script>
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jquery.js"></script>
 </body>
 </html>

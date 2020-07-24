@@ -5,7 +5,7 @@
     width: 100%;
     position: fixed;
     top: -20px;
-    left: 0px;
+    left: 0;
     right: 0;
   }
   body header .fixed-top a {

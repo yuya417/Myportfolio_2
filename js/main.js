@@ -25,21 +25,28 @@
 
 
 
-  // production-record部分のアニメーション
-  const open_2 = document.getElementById('open-2');
-  const close_2 = document.getElementById('close-2');
-  const modal_2 = document.getElementById('modal-2');
-  const mask_2 = document.getElementById('mask-2');
+  // contact部分のアニメーション
+  const open_2 = document.getElementById('open_2');
+  const close_2 = document.getElementById('close_2');
+  const modal_2 = document.getElementById('modal_2');
+  const mask_2 = document.getElementById('mask_2');
 
   open_2.addEventListener('click', () => {
-    modal_2.classList.remove('hidden-2');
-    mask_2.classList.remove('hidden-2');
+    modal_2.classList.remove('hidden_2');
+    mask_2.classList.remove('hidden_2');
+  });
+
+  close_2.addEventListener('click', () => {
+    modal_2.classList.add('hidden_2');
+    mask_2.classList.add('hidden_2');
+  });
+
+  mask_2.addEventListener('click', () => {
+    modal_2.classList.add('hidden_2');
+    mask_2.classList.add('hidden_2');
   });
 
 
-
-
-
-
-
+  
+ 
 }

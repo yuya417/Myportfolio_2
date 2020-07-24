@@ -88,65 +88,67 @@
     </div>
     <div class="career" id="career-link">
       <h1>Career</h1>
+      <div id="mask" class="hidden"></div>
       <div class="career-flex-box">
-        <table>
-          <tbody>
-            <tr>
-              <td>年齢</td>
-              <td>21歳(1999年生まれ)</td>
-            </tr>
-            <tr>
-              <td>出身</td>
-              <td>滋賀県</td>
-            </tr>
-            <tr>
-              <td>職業</td>
-              <td>大学生</td>
-            </tr>
-            <tr>
-              <td>経歴</td>
-              <td>偏差値40台の高校卒業後、難関大学を目指すため浪人。<br>
-                しかし、難関大学に落ち、龍谷大学入学。<br>
-                入学後遊びすぎてしまい、単位を落としまくる。<br>
-                このままだとやばいと思い、プログラミングに出会う。<br>
-                独学に限界を感じ、未来電子のインターンに応募。</td>
-            </tr>
-            <tr>
-              <td>趣味</td>
-              <td>野球、カラオケ、映画観賞、食べ歩き</td>
-            </tr>
-            <tr>
-              <td>ビジョン</td>
-              <td>人々の役に立つサービスを作り、幸せを届けられる人になること。</td>
-            </tr>
-  
-          </tbody>
-        </table>
-        <img src="img/IMG_3977 2.jpeg" alt="">
-      </div>
+        <section id="modal" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>年齢</td>
+                <td>21歳(1999年生まれ)</td>
+              </tr>
+              <tr>
+                <td>出身</td>
+                <td>滋賀県</td>
+              </tr>
+              <tr>
+                <td>職業</td>
+                <td>大学生</td>
+              </tr>
+              <tr>
+                <td>経歴</td>
+                <td>偏差値40台の高校卒業後、難関大学を目指すため浪人。<br>
+                  しかし、難関大学に落ち、龍谷大学入学。<br>
+                  入学後遊びすぎてしまい、単位を落としまくる。<br>
+                  このままだとやばいと思い、プログラミングに出会う。<br>
+                  独学に限界を感じ、未来電子のインターンに応募。</td>
+                </tr>
+                <tr>
+                  <td>趣味</td>
+                  <td>野球、カラオケ、映画観賞、食べ歩き</td>
+                </tr>
+                <tr>
+                  <td>ビジョン</td>
+                  <td>人々の役に立つサービスを作り、幸せを届けられる人になること。</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            <div id="close">閉じる</div>
+          </section>
+          <img src="img/IMG_3977 2.jpeg" alt="">
+        </div>
+        <div id="open">詳しく見る</div>
     </div>
-    <div class="production-record" id="production-record-link">
+    <div class="production-record" id="production-record-link ">
       <div class="production-record-h1">
         <h1>Production-record</h1>
       </div>
-      <div class="production-record-flex-box">
-        <div class="production-record-flex-box-1">
-          <h1>LINE STORE（模写）</h1>
-          <img src="img/FireShot Capture 019 - コミュニケーションアプリLINE(ライン） - .png" alt="">
-        </div>
-        <div class="production-record-flex-box-1">
-          <h1> LINE MOBILE（模写）</h1>
-          <img src="img/FireShot Capture 022 - [LINEモバイル] 格安スマホ_格安SIM 最大2ヶ月間0円_月キャンペーン実施中！ - .png" alt="">
-        </div>
-        <div class="production-record-flex-box-1">
-          <h1>FLOWER（模写）</h1>
-          <img src="img/FireShot Capture 029 - FLOWER- かわいいが届くお花便 - .png" alt="">
-        </div>
-        <div class="production-record-flex-box-1">
-          <h1>iSara（模写）</h1>
-          <img src="img/FireShot Capture 032 - iSara（模写） - .png" alt="">
-        </div>
-      </div>
+      <h3>（模写コーディング）</h3>
+      <ul class="slide-show">
+        <li class="slide active"><img src="img/FireShot Capture 019 - コミュニケーションアプリLINE(ライン） - .png" alt=""></li>
+        <li class="slide"><img src="img/FireShot Capture 022 - [LINEモバイル] 格安スマホ_格安SIM 最大2ヶ月間0円_月キャンペーン実施中！ - .png" alt=""></li>
+        <li class="slide"><img src="img/FireShot Capture 029 - FLOWER- かわいいが届くお花便 - .png" alt=""></li>
+        <li class="slide"><img src="img/FireShot Capture 032 - iSara（模写） - .png" alt=""></li>
+      </ul>
+      <nav>
+        <ul>
+          <li id="prev" class="chang-slide prev">&lt;</li>
+          <li id="next" class="chang-slide next">&gt;</li>
+        </ul>
+      </nav>
+
+
         
     </div>
     <div class="sns" id="sns-link">
@@ -170,20 +172,25 @@
       <div class="contact-h1">
         <h1>Contact</h1>
       </div>
-      <form action="">
-        <div class="form-name">
-          <input type="text" name="yourname"  class="form-name-1" placeholder="お名前/会社名">
-        </div>
-        <div class="form-email">
-          <input type="text" name="email" placeholder="メールアドレス">
-        </div>
-        <div class="form-message">
-          <textarea name="" id="" cols="30" rows="10" placeholder="メッセージ本文"></textarea>
-        </div>
-        <div class="form-submit">
-          <input type="submit" value="送信">
-        </div>
-      </form>
+      <div id="open_2">お問い合わせはこちら</div>
+      <div id="mask_2" class="hidden_2"></div>
+      <section id="modal_2" class="hidden_2">
+            <form action="">
+              <div class="form-name">
+                <input type="text" name="yourname"  class="form-name-1" placeholder="お名前/会社名">
+              </div>
+              <div class="form-email">
+                <input type="text" name="email" placeholder="メールアドレス">
+              </div>
+              <div class="form-message">
+                <textarea name="" id="" cols="30" rows="10" placeholder="メッセージ本文"></textarea>
+              </div>
+              <div class="form-submit">
+                <input type="submit" value="送信">
+              </div>
+            </form>
+            <div id="close_2">閉じる</div>
+      </section>
     </div>
   </main>
   <footer>
@@ -219,5 +226,11 @@
     </div>
   </footer>
 
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jquery.js"></script>
 </body>
 </html>
